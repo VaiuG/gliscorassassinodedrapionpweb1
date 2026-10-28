@@ -26,17 +26,34 @@
             margin: 0 10px;
         }
 
+        #home img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+        }
+
         .container-70 {
             width: 70%;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
+            gap: 2%;
         }
 
         .card-4 {
-            flex: 0 0 22%;
+            flex: 0 0 23%;
             border: 1px solid #ccc;
             padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .card-4 img {
+            width: 100%;
+            height: 140px;
+            object-fit: contain; 
+            background-color: #f9f9f9;
         }
 
         .container-50 {
@@ -49,11 +66,26 @@
         .layout-3 {
             display: flex;
             justify-content: center;
+            gap: 15px;
+            align-items: center;
         }
 
         .empilhadas {
             display: flex;
             flex-direction: column;
+            gap: 15px;
+        }
+
+        .empilhadas img {
+            width: 220px;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .layout-3 img.lateral {
+            width: 220px;
+            height: 295px; 
+            object-fit: cover;
         }
 
         footer {
@@ -61,6 +93,7 @@
             background-color: #333;
             color: white;
             padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -79,27 +112,27 @@
     <main>
         <section id="home">
             <h2>Página Home</h2>
-            <div style="display: flex;">
-                <img src="https://via.placeholder.com/300x180" alt="JoJo 1">
-                <p>Jojo fala sobre a família Joestar e a sua sina de lutar contra o mal encarnado: Dio e todos resquícios dele no mundo</p>
+            <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px;">
+                <img src="https://static.wikia.nocookie.net/jjba/images/0/00/Volume1.jpg/revision/latest?cb=20230129200734&path-prefix=pt-br" alt="JoJo 1">
+                <p>Jojo fala sobre a família Joestar e a sua sina de lutar contra o mal encarnado: Dio e todos resquícios dele no mundo.</p>
             </div>
-            <div style="display: flex;">
-                <img src="https://via.placeholder.com/300x180" alt="JoJo 2">
-                <p>Stands: a manifestação da alma de seu usuário em uma forma física. Vai de um cara forte que da porrada pra um cara que acelera o tempo exponêncialmente até o ponto que o universo inteiro reinicia.</p>
+            <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px;">
+                <img src="https://static.wikia.nocookie.net/jjba/images/3/39/Killer_queen_c345.png/revision/latest/scale-to-width/360?cb=20160325163154" alt="JoJo 2">
+                <p>Stands: a manifestação da alma de seu usuário em uma forma física. Vai de um cara forte que dá porrada pra um cara que acelera o tempo exponencialmente até o ponto que o universo inteiro reinicia.</p>
             </div>
         </section>
 
         <section id="personagens">
             <h2>Personagens favoritos</h2>
             <div class="container-70">
-                <div class="card-4"><img src="https://static.wikia.nocookie.net/animeverso/images/a/a7/JeanPierreRender.png/revision/latest?cb=20240611142749&path-prefix=pt-br"><span>Polnareff</span></div>
-                <div class="card-4"><img src="https://static.wikia.nocookie.net/jjba/images/c/cc/BrunoManga.webp/revision/latest/scale-to-width/360?cb=20230408142833&path-prefix=pt-br"><span>Bruno</span></div>
-                <div class="card-4"><img src="https://static.wikia.nocookie.net/jjba/images/f/f1/Ff.png/revision/latest/scale-to-width/360?cb=20170416183900&path-prefix=pt-br "><span>F.F</span></div>
-                <div class="card-4"><img src="https://i.pinimg.com/736x/af/7c/72/af7c72ee439c6fb07783171ad1896a09.jpg"><span>Crazy Diamond</span></div>
-                <div class="card-4"><img src="https://static.wikia.nocookie.net/herois/images/1/16/Golden_Spirit_SSR_Jotaro_I_StandOff.png/revision/latest?cb=20260829223317&path-prefix=pt-br"><span>Jotaro</span></div>
-                <div class="card-4"><img src="https://static.jojowiki.com/images/thumb/8/8e/latest/20231022194830/Weather_Report_Infobox_Anime.png/400px-Weather_Report_Infobox_Anime.png"><span>Weather report</span></div>
-                <div class="card-4"><img src="https://static.wikia.nocookie.net/jjba/images/0/01/MuhammadAvdol.webp/revision/latest/scale-to-width/360?cb=20230527000712&path-prefix=pt-br"><span>Avdol</span></div>
-                <div class="card-4"><img src="https://static.wikia.nocookie.net/jjba/images/4/48/Imagem_2022-12-02_194849864.png/revision/latest/scale-to-width/360?cb=20221202225047&path-prefix=pt-br"><span>Magician red</span></div>
+                <div class="card-4"><img src="https://static.wikia.nocookie.net/animeverso/images/a/a7/JeanPierreRender.png/revision/latest?cb=20240611142749&path-prefix=pt-br" alt="Polnareff"><span>Polnareff</span></div>
+                <div class="card-4"><img src="https://static.wikia.nocookie.net/jjba/images/c/cc/BrunoManga.webp/revision/latest/scale-to-width/360?cb=20230408142833&path-prefix=pt-br" alt="Bruno"><span>Bruno</span></div>
+                <div class="card-4"><img src="https://static.wikia.nocookie.net/jjba/images/f/f1/Ff.png/revision/latest/scale-to-width/360?cb=20170416183900&path-prefix=pt-br" alt="F.F"><span>F.F</span></div>
+                <div class="card-4"><img src="https://i.pinimg.com/736x/af/7c/72/af7c72ee439c6fb07783171ad1896a09.jpg" alt="Crazy Diamond"><span>Crazy Diamond</span></div>
+                <div class="card-4"><img src="https://static.wikia.nocookie.net/herois/images/1/16/Golden_Spirit_SSR_Jotaro_I_StandOff.png/revision/latest?cb=20260829223317&path-prefix=pt-br" alt="Jotaro"><span>Jotaro</span></div>
+                <div class="card-4"><img src="https://static.jojowiki.com/images/thumb/8/8e/latest/20231022194830/Weather_Report_Infobox_Anime.png/400px-Weather_Report_Infobox_Anime.png" alt="Weather report"><span>Weather report</span></div>
+                <div class="card-4"><img src="https://static.wikia.nocookie.net/jjba/images/0/01/MuhammadAvdol.webp/revision/latest/scale-to-width/360?cb=20230527000712&path-prefix=pt-br" alt="Avdol"><span>Avdol</span></div>
+                <div class="card-4"><img src="https://static.wikia.nocookie.net/jjba/images/4/48/Imagem_2022-12-02_194849864.png/revision/latest/scale-to-width/360?cb=20221202225047&path-prefix=pt-br" alt="Magician red"><span>Magician red</span></div>
             </div>
         </section>
 
@@ -120,11 +153,11 @@
             <h2>Destaques Visuais</h2>
             <div class="layout-3">
                 <div class="empilhadas">
-                    <img src="https://via.placeholder.com/250x150" alt="Imagem 1">
-                    <img src="https://via.placeholder.com/250x150" alt="Imagem 2">
+                    <img src="https://static.wikia.nocookie.net/jjba/images/c/ca/Scarykira.png/revision/latest?cb=20150222033552&path-prefix=pt-br" alt="Imagem 1">
+                    <img src="https://static.wikia.nocookie.net/fiction-battlefield/images/f/fa/Dio-brando-allstarbattle.png/revision/latest/scale-to-width-down/340?cb=20181123235738&path-prefix=pt-br" alt="Imagem 2">
                 </div>
                 <div>
-                    <img src="https://via.placeholder.com/250x310" alt="Imagem 3">
+                    <img class="lateral" src="https://static.jojowiki.com/images/thumb/1/1f/latest/20230129212746/Pucci_New_Moon_Infobox_Manga.png/400px-Pucci_New_Moon_Infobox_Manga.png" alt="Imagem 3">
                 </div>
             </div>
         </section>
@@ -135,5 +168,4 @@
     </footer>
 
 </body>
-</html>
 </html>
